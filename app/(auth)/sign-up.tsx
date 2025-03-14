@@ -1,19 +1,11 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View } from "react-native";
 
 const Signup = () => {
-    return (
-        <View style={styles.container}>
-            <Text className="text-red-900 font-bold">Signup</Text>
-        </View>
-    )
-}
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
-});
+  return (
+    <View>
+      <Text className="">Signup</Text>
+    </View>
+  );
+};
 
 export default Signup;
