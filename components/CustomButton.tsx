@@ -26,7 +26,7 @@ const getTextVariantStyle = (variant: ButtonProps["textVariant"]) => {
     case "outline":
       return "text-neutral-800";
     default:
-      return "text-red-800";
+      return "text-white";
   }
 };
 
@@ -42,7 +42,8 @@ const CustomButton = ({
 }: ButtonProps) => (
   <TouchableOpacity
     onPress={onPress}
-    className={`w-full rounded-full flex flex-row justify-center items-center shadow-md shadow-neutral-400/70 ${getBgVariantStyle(bgVariant)} ${className}`}
+    className={`w-10/12 rounded-full flex flex-row justify-center p-3 mb-[70px] items-center shadow-md shadow-neutral-400/70 ${getBgVariantStyle(bgVariant)} ${className}`}
+    {...props}
   >
     {IconLeft && <IconLeft />}
     <Text className={`text-lg font-bold ${getTextVariantStyle(textVariant)}`}>
